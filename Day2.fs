@@ -2,12 +2,6 @@ namespace AdventOfCode
 
 open System
 open System.IO
-open System.Runtime.InteropServices
-open System.Threading
-open System.Xml.Linq
-open System.Xml
-open System.Collections.Generic
-open System.Security.Cryptography.X509Certificates
 
 module Day2 = 
 
@@ -19,8 +13,7 @@ module Day2 =
         |> Array.min) 
 
     let parseLine (line: string) =
-        line
-            .Split('\t', StringSplitOptions.RemoveEmptyEntries)
+        line.Split('\t', StringSplitOptions.RemoveEmptyEntries)
         |> Array.map (fun s -> Convert.ToInt32(s))
 
     let parseLines lines = 

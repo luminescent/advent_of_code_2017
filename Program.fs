@@ -3,10 +3,12 @@
 open System
 open AdventOfCode.Day1
 open AdventOfCode.Day2
+open AdventOfCode.Day3
+open AdventOfCode.Day4 
 
 [<EntryPoint>]
 let main argv =
     
-    runDay2()
+    runDay4()
 
     0 // return an integer exit code
